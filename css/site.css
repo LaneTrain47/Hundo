@@ -5,3 +5,24 @@ main>.container {
 .even {
     font-weight: bold
 }
+
+.iconify {
+    width: 4rem;
+    height: 4rem;
+}
+
+.text-LinkedInBlue {
+    color: #1163bf
+}
+
+.text-GitHubPurple {
+    color: #7a319a
+}
+
+.text-YouTubeRed {
+    color: #ff0a03
+}
+
+.text-TwitterBlue {
+    color: #1da1f3
+}
