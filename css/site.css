@@ -6,7 +6,10 @@ main>.container {
     font-weight: bold
 }
 
-h1, h2, h3, li {
+h1,
+h2,
+h3,
+li {
     color: #41567c
 }
 
@@ -16,26 +19,35 @@ h1, h2, h3, li {
     margin: 1em;
 }
 
-.text-LinkedInBlue {
+.color-LinkedInBlue {
     color: #1163bf
 }
 
-.text-GitHubPurple {
-    color: #7a319a
-}
-
-.text-YouTubeRed {
+.color-YouTubeRed {
     color: #ff0a03
 }
 
-.text-TwitterBlue {
+.color-TwitterBlue {
     color: #1da1f3
 }
 
-.text-Primary {
-    color: #0f3473
+.color-gitHubPurple {
+    color: #7a319a
 }
 
-.text-CoderFoundryOrange {
+.color-CoderFoundryOrange {
     color: #ff993b
+}
+
+.color-JavaScriptYellow {
+    color: #f7df1e
+}
+
+.background-color {
+    background-color: #f7df1e;
+}
+
+.background-color:hover {
+    background-color: black;
+    color: #f7df1e;
 }
