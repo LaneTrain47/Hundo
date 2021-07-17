@@ -44,3 +44,7 @@ main>.container {
     background-color: black;
     color: #f7df1e;
 }
+
+.checklist>li i {
+    color: #f7df1e
+}
