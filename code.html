@@ -60,52 +60,52 @@
                     <div class="row">
                         <div class="col mt-3">
 
-                                <div class="row">
-                                    <p> Type any two numbers from 0 to 100 in the fields to the right, ensuring that the
-                                        number you place in the second field is larger than the one you placed in the
-                                        first. Once both fields are filled in with the numbers of your choice, click the
-                                        yellow button.
-                                    </p>
+                            <div class="row">
+                                <p> Type any two numbers from 0 to 100 in the fields to the right, ensuring that the
+                                    number you place in the second field is larger than the one you placed in the
+                                    first. Once both fields are filled in with the numbers of your choice, click the
+                                    yellow button.
+                                </p>
 
-                                    <p>The JavaScript code that powers Hundo will generate a list of numbers that will
-                                        begin
-                                        with the first number you chose and end with the second. All of the digits
-                                        between
-                                        the two numbers you provided will be displayed in the Results field, with even
-                                        numbers
-                                        represented in <strong>bold</strong> font.</p>
-                                </div>
+                                <p>The JavaScript code that powers Hundo will generate a list of numbers that will
+                                    begin
+                                    with the first number you chose and end with the second. All of the digits
+                                    between
+                                    the two numbers you provided will be displayed in the Results field, with even
+                                    numbers
+                                    represented in <strong>bold</strong> font.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-5">
                     <div class="row">
-                        <h1>Enter Values</h1>
-                        <div class="col">
-                            <input type="number" class="form-control" id="startValue" placeholder="Start Value" value=0>
-                        </div>
-                        <div class="col">
-                            <input type="number" class="form-control" id="endValue" placeholder="End Value" value=100>
-                        </div>
-                        <div class="col"></div>
-                        <div class="row-5">
-                            <div class="row-5">
-                                <button id="submitBtn" class="btn background-color border-dark mt-4 mb-4">Get the
-                                    Hundo!</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="row border-bottom border-dark">
-                                <h3>Results</h3>
-                            </div>
-                            <table class="table table-striped">
-                                <tbody id="output">
-                                </tbody>
-                            </table>
-                        </div>
+                        <p>The code is structured in three functions:
+                        </p>
+                        <p><strong>getValues</strong> accepts(gets) the user input from the page. It utilizes
+                            getElementById to pull the
+                            values from the page. It passes those values to the generateNumbers function. The function
+                            generateNumbers returns an array of values and passes that array to the displayNumbers
+                            function.</p>
+
+                        <p><strong>generateNumbers</strong> takes in two parameters startValue and endValue. We create a
+                            variable
+                            (numbers) that holds an array. A for loop is used to generate all of the numbers between
+                            startValue and endValue.</p>
+
+                        <p><strong>displayNumbers</strong> takes in one parameter numbers. The variable numbers is an
+                            array the holds
+                            values between startValue and endValue. We create a variable (className) that holds the name
+                            of a CSS class that we will use to bold the numbers. We create a variable templateRows that
+                            will hold the html we will write to the page.</p>
+
+                        <p>A <strong>for</strong> loop is used to check all of the numbers to see if they are even or
+                            odd. The remainder
+                            operator (%) is used to see if the number is divisable by two. If it returns zero the it is
+                            even. If not (else) its odd. The correct className is injected into the html row for
+                            display. Each interation of the loop adds to the teamplateRows variable. At the end of the
+                            loop the resulting HTML rows are written to the page.</p>
                     </div>
                 </div>
             </div>
