@@ -73,7 +73,7 @@ function generateNumbers(startValue, endValue) {
 
 
 //this function exists to display the results to the user
-function displayNumbers(fluffyKitty) {
+function displayNumbers(numbers) {
     //create a string to hold a class name based on even or odd
     let className = "even";
     //create a string that will hold our output
@@ -83,8 +83,8 @@ function displayNumbers(fluffyKitty) {
     //the '%' modulus operand returns the reaminder from division
     //ex. 3 % 2 = 1
     //ex. 100 % 5 = 0
-    for (let index = 0; index < fluffyKitty.length; index++) {
-        let number = fluffyKitty[index];
+    for (let index = 0; index < numbers.length; index++) {
+        let number = numbers[index];
 
         if (number % 2 == 0) {
             className = "even";
